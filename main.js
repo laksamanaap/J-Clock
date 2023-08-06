@@ -11,6 +11,18 @@ const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "
 
 function setTime() { };
 
+// Dark light mode
 toggle.addEventListener("click", (e) => {
-    console.log(e);
+    const html = document.querySelector("html");
+
+    if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        e.target.innerHTML = "Light Mode";
+    } else {
+        html.classList.add('dark');
+        e.target.innerHTML = "Dark Mode";
+    }
+
 })
+
+

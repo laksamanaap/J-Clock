@@ -2,54 +2,26 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Drumbennn DOM</title>
-  <link rel="shortcut icon" href="#">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&family=Kalam&family=Kaushan+Script&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@400;500&family=Poppins:wght@400;500;600&family=Syne:wght@500;600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Theme Clock</title>
 </head>
 
 <body>
-  <h1 id="title">Drumbenn</h1>
-  <div class="set">
-    <button class="w drum">
-      <div class="overlay"></div>
-      <p class="text">w</p>
-    </button>
-    <button class="a drum">
-      <div class="overlay"></div>
-      <p class="text">a</p>
-    </button>
-    <button class="s drum">
-      <div class="overlay"></div>
-      <p class="text">s</p>
-    </button>
-    <button class="d drum">
-      <div class="overlay"></div>
-      <p class="text">d</p>
-    </button>
-    <button class="j drum">
-      <div class="overlay"></div>
-      <p class="text">j</p>
-    </button>
-    <button class="k drum">
-      <div class="overlay"></div>
-      <p class="text">k</p>
-    </button>
-    <button class="l drum">
-      <div class="overlay"></div>
-      <p class="text">l</p>
-    </button>
-    <!-- <button class="w drum">w</button>
-    <button class="a drum">a</button>
-    <button class="s drum">s</button>
-    <button class="d drum">d</button>
-    <button class="j drum">j</button>
-    <button class="k drum">k</button>
-    <button class="l drum">l</button> -->
+
+  <button class="toggle">Dark mode</button>
+
+  <div class="clock-container">
+    <div class="clock">
+      <div class="needle hour"></div>
+      <div class="needle minute"></div>
+      <div class="needle second"></div>
+      <div class="center-point"></div>
+    </div>
+
+    <div class="time"></div>
+    <div class="date"></div>
   </div>
 
   <script src="main.js"></script>
