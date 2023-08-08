@@ -59,7 +59,16 @@ body {
     width: 200px;
     border-radius: 24px;
     padding: 24px;
-    BORDER: 2px SOLID black;
+    border: 2px SOLID black;
+    height: 200px;
+}
+
+.clock-dark {
+    position: relative;
+    width: 200px;
+    border-radius: 24px;
+    padding: 24px;
+    border: 2px SOLID white;
     height: 200px;
 }
 

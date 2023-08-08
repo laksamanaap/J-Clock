@@ -11,12 +11,15 @@ const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "
 // Dark light mode
 toggle.addEventListener("click", (e) => {
     const html = document.querySelector("html");
+    const clock = document.querySelector(".clock");
     if (html.classList.contains('dark')) {
         html.classList.remove('dark');
-        e.target.innerHTML = "Light Mode";
+        clock.classList.remove('clock-dark');
+        e.target.innerHTML = "Dark Mode";
     } else {
         html.classList.add('dark');
-        e.target.innerHTML = "Dark Mode";
+        clock.classList.add('clock-dark');
+        e.target.innerHTML = "Light Mode";
     }
 })
 
