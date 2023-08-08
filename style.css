@@ -51,11 +51,15 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 8px;
 }
 
 .clock {
     position: relative;
     width: 200px;
+    border-radius: 24px;
+    padding: 24px;
+    BORDER: 2px SOLID black;
     height: 200px;
 }
 
@@ -81,7 +85,7 @@ body {
 
 .needle.second {
     transform: translate(-50%, -100%) rotate(0deg);
-    height: 100px;
+    height: 90px;
     background-color: #e74c3c;
 }
 
